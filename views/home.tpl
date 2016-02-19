@@ -72,7 +72,7 @@
       <div class="navbar-inner">
         <div class="container">
           
-          <a class="brand pull-left" href="/"><em><?php echo $site_title; ?></em></a>
+          <a class="brand pull-left" href="/"><em><b></b><?php echo $site_title; ?></b></em></a>
 	  
           <div class="nav-collapse collapse">
            
