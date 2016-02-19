@@ -24,7 +24,7 @@
     width: 252px;
   }
     .outofstock {
-  	background-color: red;
+  	background-color: blue;
   	pointer-events: none;
    	cursor: default;
   }
@@ -39,7 +39,7 @@
         max-width: 900px;
 	border-style: solid;
 	border-color: transparent;
-	background-color: #D8D8D8	;
+	background-color: #00FF00	;
 	z-index: 9;
 	height : 100%;
 	-moz-border-radius: 15px;
