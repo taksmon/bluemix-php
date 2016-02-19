@@ -86,7 +86,8 @@
   <tr> -->
   <div class="hero-unit">
   <div>
-  <h2 class="text-center"><em><?php echo $site_title; ?></em><h2> </div>
+  <h2 class="text-center"><em><?php echo $site_title; ?></em></h2>
+  </div>
   <br/>
   
  		<p>
