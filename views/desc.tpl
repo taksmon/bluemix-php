@@ -74,7 +74,7 @@
 		<img src="/static/images/<?php echo $item->IMGSRC ?>" class="sale-photo">
 	
 		<h3>
-			Description:
+			Item Description:
 		</h3>
 	
 		<div id="description">
@@ -82,7 +82,7 @@
 		</div>
 		
 		<h3>
-			Price: 
+			Item Price: 
 		</h3>
 		
 		<div id="price"><?php echo $item->PRICE ?>.00</div>
