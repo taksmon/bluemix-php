@@ -60,14 +60,14 @@ if ($result) {
 
 // Populate the test table
 $prints = array(
-    array(1, "Nokia Mobile",
-     'nokia.jpeg', 4500, 6, 'nokia'),
+    array(1, "The most reliable mobile",
+     'nokia.jpeg', 4500, 6, 'Nokia Mobile'),
 
-    array(2, "Xiomi Smart Phone",
-     'xiaomi.jpg', 3000, 10, 'xiaomi'),
+    array(2, "The cheapest smartphone",
+     'xiaomi.jpg', 3000, 10, 'Xiaomi Phone'),
 	 
-    array(3, "Apple iPhone4",
-     'iphone.jpg', 5000, 5, 'iphone')
+    array(3, "The best smartphone",
+     'iphone.jpg', 5000, 5, 'Apple iPhone4')
 
     array(4, "Samsung Galaxy",
      'samsung.jpg', 4000, 20, 'samsung')
