@@ -62,6 +62,6 @@ db2_free_result($result);
 
 db2_close($conn);
 
-$site_title="My Cool Store";
+$site_title="MongoMobile Store";
 
 ?>
