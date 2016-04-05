@@ -92,7 +92,13 @@
   
  		<p>
 		
-			Welcome to <?php echo $site_title; ?>! If you would like to purchase an Mobile, please <a href="mailto:kitzzz@hotmail.com">contact us</a> and we will be happy to help.
+			Welcome to <?php echo $site_title; ?>, the best place to grab a mobile with a great deal!
+			
+		</p>
+		
+		<p>
+			
+			If you would like to purchase a new Mobile, please <a href="mailto:kitzzz@hotmail.com">contact us</a> and we will be happy to help.
 			
 		</p>
 		
