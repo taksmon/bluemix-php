@@ -60,22 +60,22 @@ if ($result) {
 
 // Populate the test table
 $prints = array(
-    array(1, "An advanced digital camera with interchangable lenses.",
+    array(1, "Nokia Mobile",
      'nokia.jpeg', 9000, 6, 'nokia'),
 
-    array(2, "This external HDD is compatible with USB 3.0 for fast transfers.",
+    array(2, "Xiomi Smart Phone",
      'xiaomi.jpg', 600, 10, 'xiaomi'),
 	 
-    array(3, "A stylish watch that can pair with your smartphone to show notifications.",
+    array(3, "Apple iPhone4",
      'iphone.jpg', 100, 0, 'iphone')
 
-    array(4, "A stylish watch that can pair with your smartphone to show notifications.",
+    array(4, "Samsung Galaxy",
      'sumsung.jpg', 100, 0, 'sumsung')
 
-    array(5, "A stylish watch that can pair with your smartphone to show notifications.",
+    array(5, "Acer Digital Phone",
      'acer.jpeg', 100, 0, 'acer')
 
-    array(6, "A stylish watch that can pair with your smartphone to show notifications.",
+    array(6, "htc smart phone",
      'htc.jpg', 100, 0, 'htc')
     
 );
