@@ -70,7 +70,7 @@ $prints = array(
      'iphone.jpg', 100, 0, 'iphone')
 
     array(4, "Samsung Galaxy",
-     'sumsung.jpg', 100, 0, 'sumsung')
+     'samsung.jpg', 100, 0, 'samsung')
 
     array(5, "Acer Digital Phone",
      'acer.jpeg', 100, 0, 'acer')
