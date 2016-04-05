@@ -61,22 +61,22 @@ if ($result) {
 // Populate the test table
 $prints = array(
     array(1, "Nokia Mobile",
-     'nokia.jpeg', 9000, 6, 'nokia'),
+     'nokia.jpeg', 4500, 6, 'nokia'),
 
     array(2, "Xiomi Smart Phone",
-     'xiaomi.jpg', 600, 10, 'xiaomi'),
+     'xiaomi.jpg', 3000, 10, 'xiaomi'),
 	 
     array(3, "Apple iPhone4",
-     'iphone.jpg', 100, 0, 'iphone')
+     'iphone.jpg', 5000, 5, 'iphone')
 
     array(4, "Samsung Galaxy",
-     'samsung.jpg', 100, 0, 'samsung')
+     'samsung.jpg', 4000, 20, 'samsung')
 
     array(5, "Acer Digital Phone",
-     'acer.jpeg', 100, 0, 'acer')
+     'acer.jpeg', 2000, 10, 'acer')
 
     array(6, "htc smart phone",
-     'htc.jpg', 100, 0, 'htc')
+     'htc.jpg', 3500, 30, 'htc')
     
 );
 
