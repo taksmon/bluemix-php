@@ -12,7 +12,7 @@
   <style type="text/css">
 	body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-        background-image: url("../bgimg.png"); /*add the background picture */
+        background-image: url("../static/images/bgimg.png"); /*add the background picture */
       }
   .preview {
   	float: left;
