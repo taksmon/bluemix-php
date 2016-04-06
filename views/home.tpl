@@ -13,7 +13,6 @@
 	body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
         background-image: url("../bgimg.png"); /*add the background picture */
-	
       }
   .preview {
   	float: left;
@@ -111,16 +110,7 @@
 		
 		<div>
 			
-    /* <div class="preview"> </div> display the phone information */
-    /* eg:
-    <div class="preview ">
-          <a href="desc?id=1">
-          Nokia Mobile<br>
-          <img src="/static/images/nokia.jpeg" class="thumb">
-          </a>
-    </div>
-    */
-			<?php 
+    			<?php 
 				foreach($items as $item) {  ?>
 					<div class="preview <?php if ($item->QUAN < 1) echo 'outofstock' ?>">
 
@@ -129,7 +119,7 @@
                        <img src="/static/images/<?php echo $item->IMGSRC ?>" class="thumb"/>
                     </a>
 
-          </div>
+          	</div>
 
 			<?php
 
