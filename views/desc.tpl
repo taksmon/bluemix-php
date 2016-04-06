@@ -87,6 +87,14 @@
 		
 		<div id="price"><?php echo $item->PRICE ?>.00</div>
 
+		<div>
+			
+		<h3>
+			<a href="../reserve/reserve.html">Reserve</a>
+		
+		</h3>
+		
+		</div>
   
 
  
