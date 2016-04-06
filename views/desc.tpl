@@ -12,7 +12,7 @@
   <style type="text/css">
 	body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-	
+	background-image: url("../static/images/bgimg.png"); /*add the background picture */
       }
 
 	
@@ -87,6 +87,14 @@
 		
 		<div id="price"><?php echo $item->PRICE ?>.00</div>
 
+		<div>
+			
+		<h3>
+			<a href="../reserve/reserve.html">Reserve</a>
+		
+		</h3>
+		
+		</div>
   
 
  
