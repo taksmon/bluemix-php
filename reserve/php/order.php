@@ -1,5 +1,20 @@
 <?php
-include 'config.php';
+
+// create DB connect string
+$conn_string = "DRIVER={IBM DB2 ODBC DRIVER};DATABASE=".
+   $bludb_config["db"].
+   ";HOSTNAME=".
+   $bludb_config["host"].
+   ";PORT=".
+   $bludb_config["port"].
+   ";PROTOCOL=TCPIP;UID=".
+   $bludb_config["username"].
+   ";PWD=".
+   $bludb_config["password"].
+   ";";
+   
+// connect to BLUDB
+$conn = db2_connect($conn_string, '', '');
 
 $fname = $_POST ["fname"];
 $lname = $_POST ["lname"];
@@ -15,13 +30,13 @@ $sql = "INSERT INTO Orders(FirstName, LastName, Email, Phone, Store, Model, Orde
 VALUES
 ('$fname','$lname','$email','$phone','$store','$model','$orderdate')";
 
-if (! mysql_query ( $sql, $con )) {
-	die ( 'Error: ' . mysql_error () );
+if (! db2_exec($con , $sql) {
+	die ( 'Error: ' . db2_conn_error() );
 }
 
 echo "<script>alert('submint successful!');location.href='../reserve.html';</script>";
 
 
-mysql_close ( $con );
+db2_close($con);
 
 ?>
