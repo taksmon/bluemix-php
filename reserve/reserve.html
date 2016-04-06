@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+this script is used for the limited booking time.
+<script type="text/javascript">
+window.onload = function(){
+var nowDate = new Date();
+var h=nowDate.getHours(); 
+if(h<9||h>=17){
+	document.getElementById('submit').disabled ='true';
+	document.getElementById('submit').color ='#333';
+	alert("Warning:it's not a booking time now,you can't use the submit button!")
+}else{
+	document.getElementById('submit').disabled ='false';
+}
+} 
+</script>
+-->
+<script type="text/javascript" src="js/info_validate.js"></script>
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<title>Reserve and Pick Up</title>
+</head>
+<body>
+<div id="header">
+<div id="store_name">
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;Jerry's Phone Store</h1>
+</div>
+<div id="admin_login">
+<p><a href="login.html">Admin Login</a></p>
+</div>
+</div>
+<div id="content_left">
+  <div id="phone_img"> <img src="img/phone.jpg"/> </div>
+  <div id="statement">
+    <p>Statement:</p>
+    <p> Due to the strong demand, cPhone 60 only accept a limited number of applications. If you want to book the cPhone 60, select retail stores and cPhone 60 models. If, your cPhone 60 booking application is successful, you will receive an email confirmation notice before 9:00 tonight.
+</p><p>     
+      If you do not receive an email, which represents the booking fails. Only the customers who receive an email can buy the cPhone 60. You can apply for booking the cPhone every morning from 9:00 to 17:00. Please try again later to submit an application. </p>
+  </div>
+</div>
+<div id="content_right">
+  <form action="php/order.php" method="post" onsubmit="return validate_form(this)">
+    <div id="retail_store" >
+    <h2>Select Retail Store</h2>
+      <select name="rstore">
+        <option value="none">-- Please select a retail store --</option>
+        <option value="ifc_mall">ifc mall</option>
+        <option value="mongkok">Mongkok</option>
+        <option value="shatin">Shatin</option>
+      </select>
+    </div>
+    <div id="model">
+    <h2>Select Phone Model</h2>
+    <p>choose the retail that you want to pick up the product</p>
+      <input type="radio" name="model" value="16gb" checked="true"/>
+      16GB <br>
+      <input
+					type="radio" name="model" value="32gb" />
+      32GB <br>
+      <input
+					type="radio" name="model" value="64gb" />
+      64GB <br>
+      <input
+					type="radio" name="model" value="128gb" />
+      128GB <br>
+    </div>
+    <h2>Your Contact</h2>
+    <div id="contact"> 
+    First Name:
+      <input type="text" name="fname" class="editbox"
+        onmouseover="this.style.borderColor='black'
+ 	this.style.backgroundColor='#CCC'" 
+    onmouseout="this.style.borderColor='black'
+	this.style.backgroundColor='#ffffff'"
+        >
+      <br><br>
+      Last
+      Name:
+      <input type="text" name="lname" class="editbox"   onmouseover="this.style.borderColor='black'
+ 	this.style.backgroundColor='#CCC'" 
+    onmouseout="this.style.borderColor='black'
+	this.style.backgroundColor='#ffffff'">
+      <br><br>
+      Email:
+      <input
+					type="email" name="email" class="editbox"   onmouseover="this.style.borderColor='black'
+ 	this.style.backgroundColor='#CCC'" 
+    onmouseout="this.style.borderColor='black'
+	this.style.backgroundColor='#ffffff'">
+      <br><br>
+      Phone:
+      <input type="text"
+					name="rphone" class="editbox"   onmouseover="this.style.borderColor='black'
+ 	this.style.backgroundColor='#CCC'" 
+    onmouseout="this.style.borderColor='black'
+	this.style.backgroundColor='#ffffff'">
+      <br>
+    </div>
+    <br>
+    <div id="button">
+      <input type="submit" value="Submit" id="submit" class="buttoncss">
+      <input type="reset"
+					value="Reset" class="buttoncss">
+    </div>
+    <br>
+  </form>
+</div>
+</body>
+</html>
