@@ -12,7 +12,7 @@
   <style type="text/css">
 	body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-	
+        background-image: url("../bgimg.png"); /*add the background picture */
       }
   .preview {
   	float: left;
@@ -110,15 +110,16 @@
 		
 		<div>
 			
-
-			<?php 
+    			<?php 
 				foreach($items as $item) {  ?>
 					<div class="preview <?php if ($item->QUAN < 1) echo 'outofstock' ?>">
+
 					<a href="desc?id=<?php echo $item->ID ?>"  <?php if ($item->QUAN < 1) echo "class='outofstock'"  ?> >
                        <?php echo $item->TITLE; if ($item->QUAN < 1) echo ' (out of stock)'; ?><br>
                        <img src="/static/images/<?php echo $item->IMGSRC ?>" class="thumb"/>
                     </a>
-                    </div>
+
+          	</div>
 
 			<?php
 
