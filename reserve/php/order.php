@@ -34,6 +34,10 @@ $conn_string = "DRIVER={IBM DB2 ODBC DRIVER};DATABASE=".
 // connect to BLUDB
 $conn = db2_connect($conn_string, '', '');
 
+if (!$conn) {
+    die("SQSLSTATE value: " . db2_conn_error());
+}
+
 $fname = $_POST ["fname"];
 $lname = $_POST ["lname"];
 $email = $_POST ["email"];
@@ -48,13 +52,18 @@ $sql = "INSERT INTO Orders(FirstName, LastName, Email, Phone, Store, Model, Orde
 VALUES
 ('$fname','$lname','$email','$phone','$store','$model','$orderdate')";
 
-if (! db2_exec($con , $sql) {
-	die ( 'Error: ' . db2_conn_error() );
-}
+if (! db2_exec($conn , $sql) {
+        print "Insert succeded. ";
+    }
+	else {
+		print "Insert failed! ";
+		die ( 'Error: ' . db2_conn_error() );
+	}
 
-echo "<script>alert('submint successful!');location.href='../reserve.html';</script>";
+
+echo "<script>alert('Order placed successfully!');location.href='../reserve.html';</script>";
 
 
-db2_close($con);
+db2_close($conn);
 
 ?>
