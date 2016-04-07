@@ -54,7 +54,9 @@
       <div class="navbar-inner">
         <div class="container">
           
-          <a class="brand pull-left" href="/"><em><?php echo $site_title; ?></em></a>
+          <a class="brand pull-left" href="/">
+          <img src="../static/images/logo.png"/ height="40" width="40">
+          <em><?php echo $site_title; ?></em></a>
 	  
           <div class="nav-collapse collapse">
            
