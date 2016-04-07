@@ -53,7 +53,7 @@
   <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          
+          <img src="../static/images/logo.png" height="40" width="40"/>
           <a class="brand pull-left" href="/"><em><?php echo $site_title; ?></em></a>
 	  
           <div class="nav-collapse collapse">
