@@ -23,7 +23,7 @@ if(h<9||h>=17){
 </head>
 <body>
 <div id="header">
-<div id="store_name">
+<div>
 <h1>&nbsp;&nbsp;&nbsp;&nbsp;Mango Mobile Store</h1>
 </div>
 <div id="content_left">
