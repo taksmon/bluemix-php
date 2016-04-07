@@ -73,7 +73,7 @@
         <div class="container">
           
           <a class="brand pull-left" href="/">
-          <img src="../static/images/logo.png"/>
+          <img src="../static/images/logo.png"/ height="40" width="40">
           <em><b> <?php echo $site_title; ?></b></em>
           </a>
 	  
