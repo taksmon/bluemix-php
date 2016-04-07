@@ -12,7 +12,7 @@
   <style type="text/css">
 	body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-	
+		background-image: url("../static/images/bgimg.png"); /*add the background picture */
       }
 
 	
@@ -54,7 +54,9 @@
       <div class="navbar-inner">
         <div class="container">
           
-          <a class="brand pull-left" href="/"><em><?php echo $site_title; ?></em></a>
+          <a class="brand pull-left" href="/">
+          <img src="../static/images/logo.png"/ height="40" width="40">
+          <em><?php echo $site_title; ?></em></a>
 	  
           <div class="nav-collapse collapse">
            
@@ -74,7 +76,7 @@
 		<img src="/static/images/<?php echo $item->IMGSRC ?>" class="sale-photo">
 	
 		<h3>
-			Description:
+			Item Description:
 		</h3>
 	
 		<div id="description">
@@ -82,11 +84,19 @@
 		</div>
 		
 		<h3>
-			Price: 
+			Item Price: 
 		</h3>
 		
 		<div id="price"><?php echo $item->PRICE ?>.00</div>
 
+		<div>
+			
+		<h3>
+			<a href="../reserve/reserve.html">Reserve</a>
+		
+		</h3>
+		
+		</div>
   
 
  

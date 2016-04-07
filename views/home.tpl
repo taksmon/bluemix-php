@@ -12,7 +12,7 @@
   <style type="text/css">
 	body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-	
+        background-image: url("../static/images/bgimg.png"); /*add the background picture */
       }
   .preview {
   	float: left;
@@ -72,7 +72,10 @@
       <div class="navbar-inner">
         <div class="container">
           
-          <a class="brand pull-left" href="/"><em><b><?php echo $site_title; ?></b></em></a>
+          <a class="brand pull-left" href="/">
+          <img src="../static/images/logo.png"/ height="40" width="40">
+          <em><b> <?php echo $site_title; ?></b></em>
+          </a>
 	  
           <div class="nav-collapse collapse">
            
@@ -89,10 +92,17 @@
   <h2 class="text-center"><em><?php echo $site_title; ?></em></h2>
   </div>
   <br/>
+    <p></p>
   
  		<p>
+
+			Welcome to <?php echo $site_title; ?>, the best place to grab a mobile with a great deal!
+			
+		</p>
 		
-			Welcome to <?php echo $site_title; ?>! If you would like to purchase an item, please <a href="mailto:webmaster@mycoolstore.com">contact us</a> and we will be happy to help.
+		<p>
+			
+			If you meet any problem in purchasing a new Mobile phne, please <a href="mailto:kitzzz@hotmail.com">contact us</a> and we will be happy to help.
 			
 		</p>
 		
@@ -104,21 +114,24 @@
 		
 		<div>
 			
-
-			<?php 
+    			<?php 
 				foreach($items as $item) {  ?>
 					<div class="preview <?php if ($item->QUAN < 1) echo 'outofstock' ?>">
+
 					<a href="desc?id=<?php echo $item->ID ?>"  <?php if ($item->QUAN < 1) echo "class='outofstock'"  ?> >
                        <?php echo $item->TITLE; if ($item->QUAN < 1) echo ' (out of stock)'; ?><br>
                        <img src="/static/images/<?php echo $item->IMGSRC ?>" class="thumb"/>
                     </a>
-                    </div>
+
+          	</div>
 
 			<?php
 
 				}
 			 ?>
-				
+		<div><p> ABOUT OUR COMPANY: Our company focus on the retail of mobile phone, we provide hardware, software, consumables and services to customers.
+    We understand the importance of a tailored solution for your telecommunication requirements, which is why we manage business mobile phone plans and tariffs to ensure your business.</p>
+    </div>		
 		</div> 
 		<p style="clear:both"></p>
   

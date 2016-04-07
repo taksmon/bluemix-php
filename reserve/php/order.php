@@ -1,5 +1,6 @@
 <?php
-// parse vcap
+
+//parse vcap
 if( getenv("VCAP_SERVICES") ) {
     $json = getenv("VCAP_SERVICES");
 } 
@@ -8,15 +9,13 @@ else {
     echo "No vcap services available.";
     return;
 }
-
 # Decode JSON and gather DB Info
 $services_json = json_decode($json,true);
 $blu = $services_json["sqldb"];
 if (empty($blu)) {
-    echo "No SQL database service instance is bound. Please bind a SQL database service instance";
+    echo "No dashDB service instance is bound. Please bind a SQLDB service instance.";
     return;
 }
-
 $bludb_config = $services_json["sqldb"][0]["credentials"];
 
 // create DB connect string
@@ -31,37 +30,40 @@ $conn_string = "DRIVER={IBM DB2 ODBC DRIVER};DATABASE=".
    ";PWD=".
    $bludb_config["password"].
    ";";
-  
-  
+   
 // connect to BLUDB
 $conn = db2_connect($conn_string, '', '');
-
 
 if (!$conn) {
     die("SQSLSTATE value: " . db2_conn_error());
 }
 
-// sql to create table
-$sql = "select * from stock";
+$fname = $_POST ["fname"];
+$lname = $_POST ["lname"];
+$email = $_POST ["email"];
+$phone = $_POST ["rphone"];
+$store = $_POST ["rstore"];
+$model = $_POST ["model"];
+//$_POST is a v_array
+
+$orderdate = date ( "Y-m-d H:i:s" );
+
+$sql = "INSERT INTO Orders(FirstName, LastName, Email, Phone, Store, Model, OrderDate)
+VALUES
+('$fname','$lname','$email','$phone','$store','$model','$orderdate')";
+
+if (! db2_exec($conn , $sql) {
+        print "Insert succeded. ";
+    }
+	else {
+		print "Insert failed! ";
+		die ( 'Error: ' . db2_conn_error() );
+	}
 
 
-$result = db2_exec($conn, $sql, array('cursor' => DB2_SCROLLABLE));
-if ($result) {
-	// print "select ok";
-}
+echo "<script>alert('Order placed successfully!');location.href='../reserve.html';</script>";
 
-
-while($row = db2_fetch_object($result))
- {
-
-   $items[] = clone $row;
-
-}
-
-db2_free_result($result);
 
 db2_close($conn);
-
-$site_title="Mango Mobile Store";
 
 ?>
