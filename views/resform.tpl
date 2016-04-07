@@ -17,8 +17,8 @@ if(h<9||h>=17){
 } 
 </script>
 -->
-<script type="text/javascript" src="js/info_validate.js"></script>
-<link rel="stylesheet" type="text/css" href="css/css.css">
+<script type="text/javascript" src="views/js/info_validate.js"></script>
+<link rel="stylesheet" type="text/css" href="views/css/css.css">
 <title>Reserve and Pick Up</title>
 </head>
 <body>
