@@ -24,7 +24,7 @@ if(h<9||h>=17){
 <body>
 <div id="header">
 <div>
-<h1>&nbsp;&nbsp;&nbsp;&nbsp;Mango Mobile Store</h1>
+<h1>&nbsp;&nbsp;<img src="../static/images/logo.png" height="40" width="40"/>&nbsp;&nbsp;Mango Mobile Store</h1>
 </div>
 <div id="content_left">
   <div id="phone_img"> <img src="/static/images/<?php echo $item->IMGSRC ?>"/> </div>
