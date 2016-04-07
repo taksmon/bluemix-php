@@ -86,7 +86,7 @@
   <tr> -->
   <div class="hero-unit">
   <div>
-  <h2 class="text-center"><em><?php echo $site_title; ?></em></h2>
+  <h2 class="text-center"><em><?php echo $site_title; ?>(<a href="views/about.html">About US</a>)</em></h2>
   </div>
   <br/>
   
@@ -98,7 +98,7 @@
 		
 		<p>
 			
-			If you would like to purchase a new Mobile, please <a href="mailto:kitzzz@hotmail.com">contact us</a> and we will be happy to help.
+			If you meet any problem in purchasing a new Mobile, please <a href="mailto:kitzzz@hotmail.com">contact us</a> and we will be happy to help.
 			
 		</p>
 		
