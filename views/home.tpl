@@ -128,7 +128,9 @@
 
 				}
 			 ?>
-				
+		<div><p> ABOUT OUR COMPANY: Our company focus on the retail of mobile phone, we provide hardware, software, consumables and services to customers.
+    We understand the importance of a tailored solution for your telecommunication requirements, which is why we manage business mobile phone plans and tariffs to ensure your business.</p>
+    </div>  
 		</div> 
 		<p style="clear:both"></p>
   
