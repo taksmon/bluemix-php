@@ -44,11 +44,12 @@ if (!$conn) {
 }
 
 // sql to create table
-$sql = "UPDATE stock set quan=3 where id=3";
+$sql = "UPDATE item set quan=3 where id=3";
 $result = db2_exec($conn, $sql);
 if ($result) {
 	print "item restocked";
 }
+else {print "restock failed";}
 
 db2_close($conn);
 ?>
