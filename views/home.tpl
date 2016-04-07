@@ -92,16 +92,17 @@
   <h2 class="text-center"><em><?php echo $site_title; ?></em></h2>
   </div>
   <br/>
+    <p></p>
   
  		<p>
-		
+
 			Welcome to <?php echo $site_title; ?>, the best place to grab a mobile with a great deal!
 			
 		</p>
 		
 		<p>
 			
-			If you would like to purchase a new Mobile, please <a href="mailto:kitzzz@hotmail.com">contact us</a> and we will be happy to help.
+			If you meet any problem in purchasing a new Mobile phne, please <a href="mailto:kitzzz@hotmail.com">contact us</a> and we will be happy to help.
 			
 		</p>
 		
@@ -128,7 +129,9 @@
 
 				}
 			 ?>
-				
+		<div><p> ABOUT OUR COMPANY: Our company focus on the retail of mobile phone, we provide hardware, software, consumables and services to customers.
+    We understand the importance of a tailored solution for your telecommunication requirements, which is why we manage business mobile phone plans and tariffs to ensure your business.</p>
+    </div>		
 		</div> 
 		<p style="clear:both"></p>
   
