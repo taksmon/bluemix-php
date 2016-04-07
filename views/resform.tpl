@@ -30,9 +30,9 @@ if(h<9||h>=17){
   <div id="phone_img"> <img src="/static/images/<?php echo $item->IMGSRC ?>"/> </div>
   <div id="statement">
     <p>Statement:</p>
-    <p> Due to the strong demand, cPhone 60 only accept a limited number of applications. If you want to book the cPhone 60, select retail stores and cPhone 60 models. If, your cPhone 60 booking application is successful, you will receive an email confirmation notice before 9:00 tonight.
+    <p> Due to the strong demand, Phone only accept a limited number of applications. If you want to book the Phone, select retail stores and Phone models. If, your Phone booking application is successful, you will receive an email confirmation notice before 9:00 tonight.
 </p><p>     
-      If you do not receive an email, which represents the booking fails. Only the customers who receive an email can buy the cPhone 60. You can apply for booking the cPhone every morning from 9:00 to 17:00. Please try again later to submit an application. </p>
+      If you do not receive an email, which represents the booking fails. Only the customers who receive an email can buy the Phone. You can apply for booking the cPhone every morning from 9:00 to 17:00. Please try again later to submit an application. </p>
   </div>
 </div>
 <div id="content_right">
