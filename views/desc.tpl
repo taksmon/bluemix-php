@@ -54,9 +54,7 @@
       <div class="navbar-inner">
         <div class="container">
           
-          <a class="brand pull-left" href="/">
-          <img src="../static/images/logo.png"/ height="40" width="40">
-          <em><?php echo $site_title; ?></em></a>
+          <a class="brand pull-left" href="/"><em><?php echo $site_title; ?></em></a>
 	  
           <div class="nav-collapse collapse">
            
@@ -92,8 +90,9 @@
 		<div>
 			
 		<h3>
-			<a href="../reserve/reserve.html">Reserve</a>
-		
+			 <!-- <a href="../reserve/reserve.html">Reserve</a>  -->
+       <a href="resform?id=<?php echo $item->ID ?>">Reserve</a>
+		    
 		</h3>
 		
 		</div>

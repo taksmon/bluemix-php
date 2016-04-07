@@ -42,7 +42,7 @@ if (!$conn) {
 }
 
 // sql to create table
-$sql = "select * from stock";
+$sql = "select * from item";
 
 
 $result = db2_exec($conn, $sql, array('cursor' => DB2_SCROLLABLE));

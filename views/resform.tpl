@@ -27,7 +27,7 @@ if(h<9||h>=17){
 <h1>&nbsp;&nbsp;&nbsp;&nbsp;Mango Mobile Store</h1>
 </div>
 <div id="content_left">
-  <div id="phone_img"> <img src="img/phone.jpg"/> </div>
+  <div id="phone_img"> <img src="/static/images/<?php echo $item->IMGSRC ?>"/> </div>
   <div id="statement">
     <p>Statement:</p>
     <p> Due to the strong demand, cPhone 60 only accept a limited number of applications. If you want to book the cPhone 60, select retail stores and cPhone 60 models. If, your cPhone 60 booking application is successful, you will receive an email confirmation notice before 9:00 tonight.
@@ -36,7 +36,7 @@ if(h<9||h>=17){
   </div>
 </div>
 <div id="content_right">
-  <form action="php/order.php" method="post" onsubmit="return validate_form(this)">
+  <form action="/reserve/php/order.php" method="post" onsubmit="return validate_form(this)">
     <div id="retail_store" >
     <h2>Select Retail Store</h2>
       <select name="rstore">

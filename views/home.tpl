@@ -72,10 +72,7 @@
       <div class="navbar-inner">
         <div class="container">
           
-          <a class="brand pull-left" href="/">
-          <img src="../static/images/logo.png"/ height="40" width="40">
-          <em><b> <?php echo $site_title; ?></b></em>
-          </a>
+          <a class="brand pull-left" href="/"><em><b><?php echo $site_title; ?></b></em></a>
 	  
           <div class="nav-collapse collapse">
            
@@ -128,17 +125,13 @@
 
 				}
 			 ?>
-		
+				
 		</div> 
-    
 		<p style="clear:both"></p>
   
 
  
   </div> <!-- end of the hero-unit-->
-  <div><p> ABOUT OUR COMPANY: Our company focus on the retail of mobile phone, we provide hardware, software, consumables and services to customers.
-    We understand the importance of a tailored solution for your telecommunication requirements, which is why we manage business mobile phone plans and tariffs to ensure your business.</p>
-  </div>  
   </div> <!-- end of the container-->
   
 </body>
