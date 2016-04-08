@@ -67,7 +67,7 @@ $items = array(
     array(1, "The most reliable mobile",
      'nokia.jpeg', 4500, 6, 'Nokia Mobile'),
 
-    array(2, "The cheapest smartphone",
+    array(2, "The cheapest smartphone. New, shipping with tracking number",
      'xiaomi.jpg', 3000, 10, 'Xiaomi Phone'),
 	 
     array(3, "The best smartphone",
