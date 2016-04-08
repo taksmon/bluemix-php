@@ -42,7 +42,7 @@ if (!$conn) {
 }
 
 // sql to create table
-$sql = "select * from stock";
+$sql = "select * from item";
 
 
 $result = db2_exec($conn, $sql, array('cursor' => DB2_SCROLLABLE));
@@ -62,6 +62,6 @@ db2_free_result($result);
 
 db2_close($conn);
 
-$site_title="My Cool Store";
+$site_title="Mango Mobile Store";
 
 ?>

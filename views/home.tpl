@@ -12,7 +12,7 @@
   <style type="text/css">
 	body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-	
+        background-image: url("../static/images/bgimg.png"); /*add the background picture */
       }
   .preview {
   	float: left;
@@ -71,7 +71,7 @@
   <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          
+          <img src="../static/images/logo.png" height="40" width="40"/>
           <a class="brand pull-left" href="/"><em><b><?php echo $site_title; ?></b></em></a>
 	  
           <div class="nav-collapse collapse">
@@ -86,13 +86,19 @@
   <tr> -->
   <div class="hero-unit">
   <div>
-  <h2 class="text-center"><em><?php echo $site_title; ?></em></h2>
+  <h2 class="text-center"><em><?php echo $site_title; ?>(<a href="views/about.html">About US</a>)</em></h2>
   </div>
   <br/>
   
  		<p>
 		
-			Welcome to <?php echo $site_title; ?>! If you would like to purchase an item, please <a href="mailto:webmaster@mycoolstore.com">contact us</a> and we will be happy to help.
+			Welcome to <?php echo $site_title; ?>, the best place to grab a mobile with a great deal!
+			
+		</p>
+		
+		<p>
+			
+			If you meet any problem in purchasing a new Mobile, please <a href="mailto:kitzzz@hotmail.com">contact us</a> and we will be happy to help.
 			
 		</p>
 		
@@ -104,15 +110,16 @@
 		
 		<div>
 			
-
-			<?php 
+    			<?php 
 				foreach($items as $item) {  ?>
 					<div class="preview <?php if ($item->QUAN < 1) echo 'outofstock' ?>">
+
 					<a href="desc?id=<?php echo $item->ID ?>"  <?php if ($item->QUAN < 1) echo "class='outofstock'"  ?> >
                        <?php echo $item->TITLE; if ($item->QUAN < 1) echo ' (out of stock)'; ?><br>
                        <img src="/static/images/<?php echo $item->IMGSRC ?>" class="thumb"/>
                     </a>
-                    </div>
+
+          	</div>
 
 			<?php
 
