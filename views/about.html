@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title><?php echo $site_title; ?> </title>
+<html><head>
+	<title>About </title>
 	<meta charset="utf8">  
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-   <link href="/static/bootstrap.min.css" rel="stylesheet" media="screen">
-   <link href="/static/bootstrap-responsive.css" rel="stylesheet">
-   <link href="/static/bootstrap.css" rel="stylesheet">
+   <link href="../static/bootstrap.min.css" rel="stylesheet" media="screen">
+   <link href="../static/bootstrap-responsive.css" rel="stylesheet">
+   <link href="../static/bootstrap.css" rel="stylesheet">
 
   <style type="text/css">
 	body {
@@ -71,68 +69,46 @@
   <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <img src="../static/images/logo.png" height="40" width="40"/>
-          <a class="brand pull-left" href="/"><em><b><?php echo $site_title; ?></b></em></a>
-	  
+          <img src="../static/images/logo.png" height="40" width="40">
+          <a class="brand pull-left" href="/"><em><b>Mango Mobile Store</b></em></a>
+    
           <div class="nav-collapse collapse">
            
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>  <!-- end of div for nav bar-->
-  
+
+
   <div class="container">
   <!-- <table class="table table-hover">
   <tr> -->
   <div class="hero-unit">
-  <div>
-  <h2 class="text-center"><em><?php echo $site_title; ?>(<a href="views/about.html">About US</a>)</em></h2>
-  </div>
-  <br/>
-  
- 		<p>
-		
-			Welcome to <?php echo $site_title; ?>, the best place to grab a mobile with a great deal!
-			
-		</p>
-		
-		<p>
-			
-			If you meet any problem in purchasing a new Mobile, please <a href="mailto:kitzzz@hotmail.com">contact us</a> and we will be happy to help.
-			
-		</p>
-		
-		<p>
-			
-			Check back often for promotional deals and new stock!
-			
-		</p>
-		
-		<div>
-			
-    			<?php 
-				foreach($items as $item) {  ?>
-					<div class="preview <?php if ($item->QUAN < 1) echo 'outofstock' ?>">
+<a href="http://mango.mybluemix.net/">Back</a>
 
-					<a href="desc?id=<?php echo $item->ID ?>"  <?php if ($item->QUAN < 1) echo "class='outofstock'"  ?> >
-                       <?php echo $item->TITLE; if ($item->QUAN < 1) echo ' (out of stock)'; ?><br>
-                       <img src="/static/images/<?php echo $item->IMGSRC ?>" class="thumb"/>
-                    </a>
+<div><h3 style="color: #2d2d2d;"><span style="color: #007b8f;">About us</span></h3>
 
-          	</div>
+<p>Our company focus on the retail of mobile phone, we provide hardware, software, consumables and services to customers.</p>
+<p>We understand the importance of a tailored solution for your telecommunication requirements, which is why we manage business mobile phone plans and tariffs to ensure your business.</p>
+</div>
 
-			<?php
+<br>
+<div>
+<h3 style="color: #2d2d2d;"><span style="color: #007b8f;">Our Group Members: </span></h3>
+<p>Zhang Jie</p> 
+<p>Wu Chen </p>
+<p>Ramjee Penta </p>
+<p>Eric cheung </p>
+</div>
 
-				}
-			 ?>
-				
-		</div> 
-		<p style="clear:both"></p>
-  
+<br>
 
- 
+<h3 style="color: #2d2d2d;"><span style="color: #007b8f;"><a href="mailto:kitzzz@hotmail.com">contact us</a></span></h3>
+
+
   </div> <!-- end of the hero-unit-->
   </div> <!-- end of the container-->
-  
-</body>
-</html>
+
+
+
+</body></html>
